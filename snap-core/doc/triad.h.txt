@@ -8,6 +8,13 @@ Considers the graph as undirected.
 @param SampleNodes If !=-1 then compute clustering coefficient only for a random sample of SampleNodes nodes. Useful for approximate but quick computations.
 ///
 
+/// TSnap::GetClustCfAll
+Considers the graph as undirected.
+This function is a duplicate. It is required by Snap.py.
+@param DegToCCfV Vector of pairs (degree, avg. clustering coefficient of nodes of that degree).
+@param SampleNodes If !=-1 then compute clustering coefficient only for a random sample of SampleNodes nodes. Useful for approximate but quick computations.
+///
+
 /// TSnap::GetClustCf2
 Considers the graph as undirected.
 @param DegToCCfV Vector of pairs (degree, avg. clustering coefficient of nodes of that degree).
@@ -33,6 +40,12 @@ Considers the graph as undirected.
 @param SampleNodes If !=-1 then compute triads only for a random sample of SampleNodes nodes. Useful for approximate but quick computations.
 ///
 
+/// TSnap::GetTriadsAll
+Considers the graph as undirected.
+This function is a duplicate. It is required by Snap.py.
+@param SampleNodes If !=-1 then compute triads only for a random sample of SampleNodes nodes. Useful for approximate but quick computations.
+///
+
 /// TSnap::GetTriads2
 Considers the graph as undirected.
 @param NIdCOTriadV Triple (node id, open triads: number of pairs of node's neighbors that are not connected, closed triads: number of pairs of node's neighbors that are connected between themselves).
@@ -52,6 +65,15 @@ Considers the graph as undirected.
 
 /// TSnap::GetNodeTriads1
 Considers the graph as undirected.
+@param Graph Input graph
+@param NId Input node
+@param ClosedNTriadsX On return contains the number of closed triads
+@param OpenNTriadsX On return contains the number of open triads
+///
+
+/// TSnap::GetNodeTriadsAll
+Considers the graph as undirected.
+This function is a duplicate. It is required by Snap.py.
 @param Graph Input graph
 @param NId Input node
 @param ClosedNTriadsX On return contains the number of closed triads

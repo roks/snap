@@ -21,6 +21,12 @@
 #include "networkmp.h"       // networks OMP
 #include "bignet.h"          // large networks
 #include "timenet.h"         // time evolving networks
+#include "mmnet.h"           // multimodal networks
+
+// table data structures and algorithms
+#include "table.h"           // table
+#include "conv.h" 	         // conversion functions - table to graph
+#include "numpy.h" 	         // numpy conversion
 
 // algorithms
 #include "subgraph.h"        // subgraph manipulations
@@ -37,6 +43,9 @@
 #include "flow.h"            // network flow algorithms
 #include "coreper.h"         // core-periphery algorithms
 #include "randwalk.h"        // Personalized PageRank
+#include "casc.h"            // cascade graph construction from events^M
+#include "sim.h"             // K-nearest neighbors
+
 
 // graph generators
 #include "ggen.h"            // graph generators (preferential attachment, small-world, ...)
@@ -46,10 +55,4 @@
 #include "gviz.h"
 #include "ghash.h"
 #include "statplot.h"
-
-// table data structures and algorithms
-#include "table.h"          // table
-#include "conv.h"           // conversion functions - table to graph
-#include "numpy.h"          // numpy conversion
-
 #endif // SNAP_H

@@ -23,6 +23,10 @@ TEST_SRCS = \
 	test-TNodeNet.cpp test-TNodeEDatNet.cpp test-TNodeEdgeNet.cpp \
 	test-TTable.cpp \
 	test-TUndirNet.cpp test-TDirNet.cpp \
+	test-TMMNet.cpp \
+	test-TModeNet.cpp \
+	test-TCrossNet.cpp \
+	test-multimodal.cpp \
 	test-subgraph.cpp \
 	test-TStrPool.cpp \
 	test-TSysTm.cpp \
@@ -38,7 +42,8 @@ TEST_SRCS = \
 	test-TAttr.cpp \
 	test-flow.cpp \
 	test-randwalk.cpp \
-	test-priority-queue.cpp
+	test-priority-queue.cpp \
+	test-sim.cpp
 
 TEST_OBJS = $(TEST_SRCS:.cpp=.o)
 

@@ -8,6 +8,7 @@ MakeAll:
 	$(MAKE) -C agmfit
 	$(MAKE) -C agmgen
 	$(MAKE) -C bigclam
+	$(MAKE) -C cascadegen
 	$(MAKE) -C cascades
 	$(MAKE) -C centrality
 	$(MAKE) -C cesna
@@ -22,9 +23,12 @@ MakeAll:
 	$(MAKE) -C graphhash
 	$(MAKE) -C infopath
 	$(MAKE) -C kcores
+	$(MAKE) -C knnjaccardsim
 	$(MAKE) -C kronem
 	$(MAKE) -C kronfit
 	$(MAKE) -C krongen
+	$(MAKE) -C localmotifcluster
+	$(MAKE) -C lshtest
 	$(MAKE) -C magfit
 	$(MAKE) -C maggen
 	$(MAKE) -C mkdatasets
@@ -35,14 +39,17 @@ MakeAll:
 	$(MAKE) -C netevol
 	$(MAKE) -C netinf
 	$(MAKE) -C netstat
+	$(MAKE) -C node2vec
 	$(MAKE) -C randwalk
 	$(MAKE) -C rolx
+	$(MAKE) -C temporalmotifs
 	$(MAKE) -C testgraph
 
 clean:
 	$(MAKE) clean -C agmgen
 	$(MAKE) clean -C agmfit
 	$(MAKE) clean -C bigclam
+	$(MAKE) clean -C cascadegen
 	$(MAKE) clean -C cascades
 	$(MAKE) clean -C centrality
 	$(MAKE) clean -C cesna
@@ -57,9 +64,12 @@ clean:
 	$(MAKE) clean -C graphhash
 	$(MAKE) clean -C infopath
 	$(MAKE) clean -C kcores
+	$(MAKE) clean -C knnjaccardsim
 	$(MAKE) clean -C kronem
-	$(MAKE) clean -C krongen
 	$(MAKE) clean -C kronfit
+	$(MAKE) clean -C krongen
+	$(MAKE) clean -C localmotifcluster
+	$(MAKE) clean -C lshtest
 	$(MAKE) clean -C magfit
 	$(MAKE) clean -C maggen
 	$(MAKE) clean -C mkdatasets
@@ -69,7 +79,9 @@ clean:
 	$(MAKE) clean -C netevol
 	$(MAKE) clean -C netinf
 	$(MAKE) clean -C netstat
+	$(MAKE) clean -C node2vec
 	$(MAKE) clean -C randwalk
 	$(MAKE) clean -C rolx
+	$(MAKE) clean -C temporalmotifs
 	$(MAKE) clean -C testgraph
 	rm -rf Debug Release ipch

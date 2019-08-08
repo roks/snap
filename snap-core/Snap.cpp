@@ -18,6 +18,12 @@
 #include "network.cpp"       // networks
 #include "networkmp.cpp"     // networks OMP
 #include "timenet.cpp"       // time evolving networks
+#include "mmnet.cpp"         // multimodal networks
+
+// table data structures and algorithms
+#include "table.cpp"         // table
+#include "conv.cpp"
+#include "numpy.cpp"         // numpy conversion
 
 // algorithms
 #include "subgraph.cpp"      // subgraph manipulations
@@ -31,6 +37,8 @@
 #include "flow.cpp"          // network flow algorithms
 #include "coreper.cpp"       // core-periphery algorithms
 #include "triad.cpp"         // clustering coefficient and triads
+#include "casc.cpp"          // cascade graph construction from events^M
+#include "sim.cpp"           // K-nearest neighbors
 
 // graph generators
 #include "ggen.cpp"          // graph generators (preferential attachment, small-world, ...)
@@ -40,8 +48,3 @@
 #include "ghash.cpp"
 #include "statplot.cpp"
 #include "gio.cpp"
-
-// table data structures and algorithms
-#include "table.cpp"         // table
-#include "numpy.cpp"         // numpy conversion
-
